@@ -211,6 +211,14 @@ class Generator extends \yii\gii\Generator
     }
 
     /**
+     * @inheritdoc
+     */
+    public function getTemplatePath()
+    {
+        return __DIR__.'/adm';
+    }
+
+    /**
      * Generates the attribute labels for the specified table.
      * @param \yii\db\TableSchema $table the table schema
      * @return array the generated attribute labels (name => label)
